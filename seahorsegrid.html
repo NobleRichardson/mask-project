@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <style>
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 10px;
+    }
+
+    .span-col-2 {
+      grid-column: span 2 / auto;
+    }
+
+    .span-col-3 {
+      grid-column: span 3 / auto;
+    }
+  </style>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+
+<body>
+  <div class="grid">
+    <div id="Title" class="span-col-2">Item 1</div>
+    <div id=>"image">Item 2</div>
+    <nav>Item 3</nav>
+    <article class="span-col-2"></article>
+
+  <footer class="span-col-3">Item 5</footer>
+    </div>
+
+</body>
+
+</html>

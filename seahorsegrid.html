@@ -3,33 +3,79 @@
 
 <head>
   <style>
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-gap: 10px;
-    }
 
-    .span-col-2 {
-      grid-column: span 2 / auto;
+    #title {
+      background: lightblue
     }
+    body{ background: pink}
 
-    .span-col-3 {
-      grid-column: span 3 / auto;
+    @media only screen and (min-width: 768px) {
+#title{background: #ff8859}
+      body {
+        background: #a0fff7
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
+      }
+
+      .span-col-2 {
+        grid-column: span 2 / auto;
+      }
+
+      .span-col-3 {
+        grid-column: span 3 / auto;
+      }
     }
   </style>
   <meta charset="utf-8">
-  <title></title>
+  <title>seahorse serenity</title>
 </head>
 
 <body>
   <div class="grid">
-    <div id="Title" class="span-col-2">Item 1</div>
-    <div id=>"image">Item 2</div>
-    <nav>Item 3</nav>
-    <article class="span-col-2"></article>
-
-  <footer class="span-col-3">Item 5</footer>
+    <div id="title" class="span-col-2">
+      <h1>SeaHorse Serenity</h1>
     </div>
+    <img src="seahorse.jpg">
+  </div>
+
+  <nav>
+    <h2> links</h2>
+    <ul>
+      <li>Seahorse Friends:</li>
+      <li><a href="http://www.theseahorsetrust.org/seahorse-facts.aspx" target="_blank">The Seahorse Trust</a> |</li>
+      <li><a href="http://www.nationalgeographic.com/animals/fish/group/seahorses/" target="_blank">National Geographic</a> |</li>
+      <li><a href="http://seahorse.com/" target="_blank">Seahorse.com</a> |</li>
+      <li><a href="http://www.allthesea.com/Seahorses.html" target="_blank">All The Sea</a></li>
+    </ul>
+  </nav>
+  <article class="span-col-2">
+    <h2>content<h2>
+        <h1>SEAHORSE FACTS</h1>
+        <h2>Name</h2>
+        <p>The Latin name for seahorse is Hippocampus which means "Horse Caterpillar"</p>
+        <h2>What is a Seahorse</h2>
+        <p>Seahorses are fish. They live in water, breath through gills and have a swim bladder. However they do not have caudal fins and have a long snake-like tail. They also have a neck and a snout that points down.</p>
+        <h2>Eyesight</h2>
+        <p>Seahorses have excellent eyesight and their eyes are able to work independently on either side of their head. This means they can look forwards and backwards at the same time! This is particularly useful as they hunt for food by sight.</p>
+        <h2>Snout</h2>
+        <p>Seahorses have long thin snouts enabling them to probe into nooks and crannies for food. When they find food they suck it up through their snouts like a vacuum cleaner. Their snouts can expand if their prey is larger than the snout. They
+          are not able to chew and have to disintegrate the food as they eat it.</p>
+        <h2>Diet</h2>
+        <p>Seahorses eat small crustacea such as Mysis Shrimp. An adult eats 30-50 times a day. Seahorse fry (baby seahorses) eat a staggering 3000 pieces of food per day.</p>
+        <h2>Tail</h2>
+        <p>Seahorses have a prehensile tail. This allows them to grip onto eelgrass and other weeds and prevents them from being washed away by strong currents and waves.</p>
+        <h2>Colour</h2>
+        <p>Seahorses can change colour very quickly and match any surroundings in which it finds itself. They have even been known to turn bright red to match floating debris.</p>
+        <p>Both males and females also change colour during their courtship display.</p>
+        <h2>Body</h2>
+        <p>Unlike most other fish, seahorses have an exoskeleton. Their bodies are made up of hard, external, bony plates that are fused together with a fleshy covering. They do not have scales.</p>
+  </article>
+
+  <footer class="span-col-3"> Copy right things </footer>
 
 </body>
 
